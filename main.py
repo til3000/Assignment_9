@@ -6,7 +6,7 @@ def path_to_file_list(path: str) -> List[str]:
     lines = open(path, 'r').read().split('\n')
     return lines
 
-def train_file_list_to_json(english_filgit e_list: List[str], german_file_list: List[str]) -> List[str]:
+def train_file_list_to_json(english_file_list: List[str], german_file_list: List[str]) -> List[str]:
     """Converts two lists of file paths into a list of json strings"""
     # Preprocess unwanted characters
     def process_file(file):
